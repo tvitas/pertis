@@ -20,7 +20,7 @@ if ($repo_id) {
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="lt">
 <head>
-<title>UŽDUOTYS LSMU</title>
+<title>PERTIS</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link href="sites/pertis/css/print.css" rel="stylesheet" type="text/css">
 <?php

@@ -19,7 +19,7 @@
 			include ("$cfg_translations_dir/$lang_file");
 		}
 	}
-$title = "LSMU UŽDUOTYS"
+$title = "PERTIS"
 ?>
 <!DOCTYPE html">
 <html>
