@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="lt">
+<head>
+<title>PERTIS pagalba</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../css/help.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="h-main-frame">
+<a name="top"></a>
+<div id="h-contents" class="h-contents">
+<h1>LSMU PERT veiklos informacinė sistema PERTIS</h1>
+<h2>Naudotojo vadovas</h2>
+<h3>Turinys</h3>
+<ul>
+<li><a href="#about" class="index-class">Apie sistemą</a></li>
+<li><a href="#quick_start" class="index-class">Pradžiamokslis</a></li>
+	<ul>
+		<li><a href="#login" class="index-class">Prisijungti prie sistemos</a></li>
+		<li><a href="#ui" class="index-class">Naudotojo sąsaja</a></li>
+		<ul>
+			<li><a href="#sysmenu">Sistemos meniu</a></li>
+			<li><a href="#dashboard">Užduočių lenta</a></li>
+			<li><a href="#table">Lentelės rodinys</a></li>
+			<li><a href="#form">Formos rodinys</a></li>
+			<li><a href="#error_messages">Pranešimai apie klaidas</a></li>
+			<li><a href="#notice_messages">Informaciniai pranešimai</a></li>
+			<li><a href="#ui_notes">Pastabos apie naudotojo sąsają</a></li>			
+		</ul>
+		<li><a href="#example_reg" class="index-class">Užduoties/gedimo registravimo pavyzdys</a></li>
+		<li><a href="#example_task" class="index-class">Užduoties vykdymo aprašymo pavyzdys</a></li>
+	</ul>
+<li><a href="pert_tasks_registry_1.html" class="index-class">Užduočių registras/gedimų žurnalas</a>
+	<ul>
+		<li><a href="pert_tasks_1.html">Užduotys</a></li>
+		<li><a href="system_schema_files_1.html">Failai</a></li>
+	</ul>
+</li>
+
+<li><a href="pert_tasks_1.html" class="index-class">Užduotys</a>
+	<ul>
+		<li><a href="pert_tasks_registry_1.html">Užduočių registras/Gedimų žurnalas</a></li>
+		<li><a href="pert_tasks_recources_1.html">Užduočių resursai</a></li>
+		<li><a href="pert_tasks_effectors_1.html">Užduočių vykdytojai</a></li>		
+		<li><a href="system_schema_files_1.html">Failai</a></li>
+	</ul>
+</li>
+<li><a href="#print_report" class="index-class">Ataskaitų generavimas</a></li>
+</ul>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="about"></a>
+<h2>Apie sistemą</h2>
+<p>
+LSMU PERT kompiuterinė informacinė sistema, sauganti ir apdorojanti informaciją apie PERT veiklą.
+</p>
+<p>
+<a href="http://www.apache.org"><img src="img/apache-powered.png" alt="powered by Apache" title="Powered by Apache"></a>
+<a href="http://www.postgresql.org"><img src="img/pgsql.gif" alt="powered by Powered by PostgreSQL" title="Powered by PostgreSQL"></a>
+<a href="http://www.php.net"><img src="img/php-power.png" alt="powered by PHP" title="Powered by PHP"></a>
+<a href="http://en.wikipedia.org/wiki/Ajax_%28programming%29"><img src="img/ajax1.jpg" alt="Using Ajax" title="Using Ajax"></a>
+<a href="http://en.wikipedia.org/wiki/JavaScript"><img src="img/javascript.png" alt="Using JavaScript" title="Using JavaScript"></a>
+ Ikonos – <a href="http://www.famfamfam.com/lab/icons/silk/">Silk Icons</a>
+ Aplikacijos variklis – VDBVA
+</p>
+<p>
+<ul>
+<li>Rekomenduojama naršyklė – FireFox 3+, Chrome, Internet Explorer 7+</li>
+</ul>
+</p>
+<div class="p-break"></div>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="quick_start"></a>
+<h2>Pradžiamokslis</h2>
+
+<a name="login"></a>
+<h3>Prisijungti prie sistemos</h3>
+<p>
+Atsiversti saityno naršyklę, adreso laukelyje surinkti sistemos url adresą, pvz. http://pertis.lva.lt 
+</p>
+<p class="warn">
+<img src="../../../lib/img/recordset/bullet_error.png" alt="Dėmesio" title="Dėmesio">
+<em><strong>Pastaba.</strong> 
+Sistema <strong>gali naudoti</strong> taip vadinamą „self signed“ sertifikatą šifruotam SSL ryšiui. Saityno naršyklės nežino apie tokio
+sertifikato buvimą, todėl informuoja naudotoją, kad ryšys nesaugus. Reikia ignoruoti naršyklės pranešimą arba įdiegti 
+sertifikatą. <a href="files/pertis.cer">(Saitas į sertifikatą)</a> arba klauskite pas sistemos administratorių.</em>
+<ul>
+<li>Spausti ignoravimui:
+	<li>Internet explorer – „Continue on this website“</li>
+	<li>Mozilla Firefox – „I understand risks“, po to „Add exception“</li>
+	<li>Google Chrome – „Proceed anyway“</li>
+</li>
+</ul>
+Atsiverčia įsijungimo į sistemą forma:
+<ul>
+<li><img src="img/login_screen.png" alt="Įsijungimo į IS forma" title="Įsijungimo į IS forma"></li>
+</ul>
+<ul>
+<li>Laukelyje „Language“ galite pakeisti kalbą</li>
+<li>Laukelyje „Prisijungti“ įvesti prisijungimo vardą, suteiktą sistemos administratoriaus, arba LSMU AD prisijungimo vardą</li> 
+<li>Laukelyje „Slaptažodis“ įvesti slaptažodį, suteiktą sistemos administratoriaus, arba LSMU AD slaptažodį.</li> 
+<li>Laukelyje „DB“ pasirinkti duomenų bazę, pvz. PERTIS</li>
+<li>Spausti <input type="button" value="Gerai"></li>
+</ul>
+</p>
+<p>
+Jei paspaudus „Gerai“ nieko nevyksta arba matyti pranešimas „Netinka vardas/slaptažodis/DB“, pasitikrinkite, ar
+teisingai įvedėte prisijungimo vardą, slaptažodį, ar parinkote duomenų bazę ir bandykite dar kartą, 
+arba kreipkitės į sistemos administratorių.
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="ui"></a>
+<h3>Naudotojo sąsaja</h3>
+<p>
+Duomenys sistemoje įvedami, redaguojami, naikinami 
+naudojantis „<a href="#table">lentelė</a> – <a href="#form">forma</a>“ metodu, t. y. pasirinkus lentelę meniu ar „<a href="#dashboard">užduočių lentoje</a>“, rodomi lentelės įrašai 
+ir veiksmų su įrašais piktogramos. Lentelės eilutė (įrašas) įvedamas/taisomas eilutės redagavimo <a href="#form">formoje</a>.
+</p>
+<p>
+Sistemos lango viršuje yra informacinė eilutė apie įmonę, 
+informacinę sistemą, bei prisijungusį naudotoją, žemiau – <a href="#sysmenu">sistemos meniu</a>, kuriame pasirenkama lentelė, 
+rodomų eilučių skaičius ekrano puslapyje, įrašų atnaujinimo, pagalbos, 
+darbo pabaigos su sistema piktogramos. Žemiau sistemos meniu, priklausomai nuo sistemos nustatymų, 
+rodoma „užduočių lenta“ su informacinės sistemos meniu.
+</p>
+<p class="warn">
+<img src="../../../lib/img/recordset/bullet_error.png">
+<em><strong>Pastaba.</strong> „Užduočių lenta“ gali būti ir nerodoma, nes „užduočių lentą“ įjungia ir nustatymus tvarko 
+sistemos naudotojas, tvarkantis sistemos nustatymus.</em>
+</p>
+<p></p>
+<p class="warn">
+<img src="../../../lib/img/recordset/bullet_error.png">
+<em><strong>Pastaba.</strong> Šiame vadove veiksmų aprašymuose naudojant terminą „užduočių lenta“ turima omenyje, 
+kad užduočių lenta nustatyta pagal numatytuosius parametrus ir įjungta.</em>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="sysmenu"></a>
+<h4>Sistemos meniu</h4>
+<p>
+<img src="img/interface/sys_menu.png" alt="Sistemos meniu" title="Sistemos meniu">
+<ul>
+<li><strong>Language</strong> – pakeisti kalbą;</li>
+<li><strong>Skyrius</strong> – pasirinkti lentelę redagavimui;</li>
+<li><strong>Rodyti</strong> ... eilučių (-tes) – kiek lentelės eilučių rodyti ekrano puslapyje;</li>
+<li><strong>Atnaujinti</strong> – atnaujinti duomenis, jei buvo DB struktūros pakeitimai;</li>
+<li><strong>Pagalba</strong> – šis vadovas, kontekstinė pagalba;</li>
+<li><strong>Baigti</strong> – baigti darbą su sistema, prisijungti prie kitos duomenų bazės.</li>
+</ul>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="dashboard"></a>
+<h4>„Užduočių lentos“ pavyzdys</h4>
+<p>
+<img src="img/interface/system_dashboard.png" alt="Užduočių lenta." title="Užduočių lenta." style="margin: 5px;">
+</p>
+<p>
+Iš meniu „Lentelė“ arba užduočių lentos pasirinkus norimą redaguoti lentelę, ji atverčiama.
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="table"></a>
+<h4>Lentelė</h4>
+<p>
+<img src="img/interface/table_view.png" alt="Lentelė" title="Lentelė">
+<ul>
+<li><img src="../../../lib/img/recordset/cross.png" alt="Cross" title="Užversti lentelę"> – užversti, uždaryti lentelę;</li>
+<li>Užduočių registras – lentelės pavadinimas;</li>
+<li><img src="../../../lib/img/recordset/table_row_delete.png" alt="Del" title="Naikinti eilutę"> – naikinti pažymėtą lentelės eilutę;</li>
+<li><img src="../../../lib/img/recordset/table_row_insert.png" alt="Ins" title="Įterpti eilutę"> – įterpti naują lentelės eilutę;</li>
+<li><img src="../../../lib/img/recordset/page_copy.png" alt="Copy" title="Kopijuoti eilutę"> – kopijuoti pažymėtą lentelės eilutę;</li>
+<li><img src="../../../lib/img/recordset/table_edit.png" alt="Edit" title="Redaguoti eilutę"> – redaguoti pažymėtą lentelės eilutę;</li>
+<li><img src="../../../lib/img/recordset/table.png" alt="View" title="Peržiūrėti eilutę"> – peržiūrėti pažymėtą lentelės eilutę;</li>
+<li><img src="../../../lib/img/recordset/page_find.png" alt="Filter" title="Filtras"> – įjungti/išjungti filtravimo dialogą;</li>
+<li><img src="../../../lib/img/recordset/printer.png" alt="Print" title="Spausdinti"> – Spausdinti. 
+Jei pažymėta eilutė, spausdinama ataskaita tik su tos eilutės duomenimis, jei ne – visos lentelės duomenys;</li>
+<li><strong>Puslapis ... iš ...</strong> – kelintas ekrano puslapis/iš viso puslapių dabar matomas, pasirinkti puslapį;</li>
+<li><strong>&laquo;&raquo;</strong> – ankstesnis, kitas ekrano puslapis;</li>
+<li><input type="radio"> – lentelės eilutės žymeklis. Vienu metu gali būti pažymėta tik viena eilutė.</li>
+<a name="sort_records"></a>
+<li><img src="img/interface/table_column_head.png" alt="Column head" title="Lentelės stulpelio antraštė"> – lentelės stulpelio antraštė.</li> 
+<li><strong>Rikiuoti</strong> – paspaudus stulpelio pavadinimą (paveikslėlyje – „Nuo“), lentelė įrašai <strong>surikiuojami</strong> didėjančia arba mažėjančia tvarka.</li> 
+<li><strong>Atšaukti rikiavimą</strong> – paspausti ant antraštės „Nr.“. </li>
+<a name="filter_records"></a>
+<li><strong>Įvedus filtravimo sąlygą</strong> į laukelį, esantį žemiau stulpelio pavadinimo 
+ir paspaudus ENTER (FF) arba TAB (IE), <strong>įjungiamas filtras</strong>.</li>
+<li>Taip pat, paspaudus <img src="../../../lib/img/recordset/page_find.png" alt="Filter" title="Filtras"> 
+ir atvertus platesnio filtro dialogą, galima nustatyti ir sudėtingesnę filtravimo sąlygą (filtruoti ne pagal vieno stulpelio reikšmę, apjungti kelias reikšmes IR ARBA, t. t.).
+<img src="img/interface/filter_dialog.png" alt="Column head" title="Lentelės stulpelio antraštė">
+</li> 
+<li><strong>Išjungti</strong> filtrą – tiesiog ENTER (TAB) filtro įvedimo laukelyje, arba spausti <img src="../../../lib/img/recordset/zoom_out.png" alt="UnFilter" title="Nefiltruoti">.</li>
+<li><strong>Nustatant filtro sąlyga</strong> reikėtų galvoti maždaug taip: „Parodyti visus įrašus, kurių (stulpelio pavadinimas) panašus į (filtro sąlyga)“.</li>
+<li class="warn">
+<img src="../../../lib/img/recordset/bullet_error.png">
+<em><strong>Pastaba. </strong>Pritaikytas rikiavimas ir/arba filtras galioja ir spausdinamoms ataskaitoms.</em>
+</li>
+<li><img src="img/interface/table_status.png" alt="Status bar" title="Lentelės informacinė eilutė"> – lentelės informacinė eilutė. Filtras ir rikiavimas išjungti;</li>
+<li><img src="img/interface/table_status_filter.png" alt="Status bar" title="Lentelės informacinė eilutė"> – lentelės informacinė eilutė. Įjungtas filtras;</li>
+<li><img src="img/interface/table_status_filter_order.png" alt="Status bar" title="Lentelės informacinė eilutė"> – lentelės informacinė eilutė. Įjungti filtras ir rikiavimas;</li>
+</ul>
+</p>
+<p>
+Lentelės eilutę pažymėjus (<input type="radio" CHECKED>) ir paspaudus 
+<img src="../../../lib/img/recordset/table_edit.png" alt="Edit" title="Taisyti">, 
+atverčiama eilutės redagavimo forma. 
+Panaši forma atverčiama ir naikinant 
+(<img src="../../../lib/img/recordset/table_row_delete.png" alt="Del" title="Naikinti eilutę">) 
+bei įterpiant 
+(<img src="../../../lib/img/recordset/table_row_insert.png" alt="Ins" title="Įterpti eilutę">) 
+eilutes. 
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="form"></a>
+<h4>Eilutės redagavimo forma</h4>
+<p>
+<img src="img/interface/form.png" alt="Forma" title="Redagavimo forma">
+<ul>
+<li><img src="img/interface/form_head.png" alt="Forma" title="Formos antraštė"> – formos antraštė. Rodoma formos uždarymo piktograma ir lentelės pavadinimas;</li>
+<li><img src="img/interface/form_status.png" alt="Forma" title="Formos informacinė eilutė"> – formos informacinė eilutė. Rodomas veiksmas su lentelės eilute („Taisyti“, „Naikinti“, „Įterpti“);</li>
+<li><img src="img/interface/form_field_editable.png" alt="Forma" title="Taisymo laukelis"> – laukelis taisymui. Duomenys įvedami „ranka“. Jei duomenys neįvedami, priskiriami sistemos numatytieji duomenys;</li>
+<li><img src="img/interface/form_field_selectable.png" alt="Forma" title="Pasirinkimo laukelis"> – sąrašo 
+laukelis. Duomenys negali būti įvedami „ranka“, būtina pasirinkti iš sarašo, esančio laukelio dešinėje. 
+Jeigu reikia papildyti sąrašą, spausti <img src="../../../lib/img/recordset/table_row_insert.png" alt="Įterpti" title="Įterpti"> sąrašo laukelio dešinėje;</li>
+<li><img src="img/interface/form_field_read_only.png" alt="Forma" title="Tik skaitymui"> – laukelis tik skaitymui. Duomenų įvesti/taisyti negalima. Sistema užpildo šiuos laukelius automatiškai;</li>
+<li><img src="img/interface/form_tabs.png" alt="Forma" title="Tabai"> – jei redaguojama lentelė turi susijusiujų lentelių, rodomi susijusiujų lentelių pavadinimai. 
+Paspaudus pavadinimą, atverčiama susijusi lentelė formoje. 
+Paspaudus piktogramą, esančią susijusiujų lentelių pavadinimų kairėje, visos susijusios 
+lentelės užverčiamos.</li>
+<li><img src="img/interface/form_buttons.png" alt="Forma" title="Formos mygtukai"> – mygtukai. 
+Paspaudus <input type="button" value="Saugoti"> duomenys išsaugomi, forma užverčiama. 
+Paspaudus <input type="button" value="Atgal">, duomenys neišsaugomi, forma užverčiama, 
+t. p. paspaudus <img src="../../../lib/img/recordset/cross.png"> formos antraštėje.</li>
+</ul>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="error_messages"></a>
+<h4>Pranešimai apie klaidas</h4>
+<p>
+Įvairiais (dažniausiai neteisingo duomenų įvedimo atveju) atvejais sistema generuoja 
+pranešimą apie klaidą. 
+Klaidos pranešimo tekstas generuojamas iš duomenų bazių serverio, todėl, priklausomai nuo serverio versijos, nustatymų,  
+gali būti ir ne lietuviškas. Klaidos pranešimo langas užverčiamas užvedus ant jo pelės žymeklį.
+<ul>
+<li>Pranešimo apie klaidą pavyzdys</li>
+<li><img src="img/interface/example_error.png" alt="" ></li>
+</ul>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="notice_messages"></a>
+<h4>Informaciniai pranešimai</h4>
+<p>
+Įvairiais atvejais sistema generuoja informacinius pranešimus tam, kad informuoti naudotoją apie pvz. automatinį veiksmą, ar rolės leidimus. 
+Informacinio praanešimo langas užverčiamas užvedus ant jo pelės žymeklį.
+<ul>
+<li>Informacinio pranešimo pavyzdys</li>
+<li><img src="img/interface/example_notice.png" alt="" ></li>
+</ul>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="ui_notes"></a>
+<h4>Pastabos apie naudotojo sąsają</h4>
+<p>
+<ul>
+<li>Jei formoje reikia įvesti datą (pvz. „Baigė“), datos formatas <em>privalo būti</em> arba 
+YYYY-MM-DD (pvz. 2012-01-01), arba YYYY MM DD (pvz. 2012 01 01), arba YYYY.MM.DD (pvz. 2012.01.01);
+</li>
+<li>Greitai ieškoti įrašo sąraše <img src="img/interface/select_list_example.png" alt="Sąrašo pavyzdys" title="Sąrašo pavyzdys">
+galima pasirinkus sąraša ir spaudžiant pirmąjį norimo pasirinkti įrašo ženklą klaviatūroje (IE) arba greitai 
+renkant klaviatūroje įrašo pavadinimą (FF).</li>
+<li>Jeigu įvedant duomenis reikia pasirinkti iš sąrašo, bet sąraše nėra norimo punkto, 
+sąrašą galima papildyti, paspaudus <img src="../../../lib/img/recordset/table_row_insert.png" alt="Įterpti" title="Įterpti"> sąrašo laukelio dešinėje.</li>
+</ul>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="example_reg"></a>
+<h3>Užregistruoti gedimą/užduotį</h3>
+<p>
+Tarkime Jūsų kabinete perdegė elektros lemputė. Jeigu norite, kad ji būtų pakeista, turite užregistruoti gedimą sistemoje PERTIS. <br />
+Veiksmai:
+<ol>
+<li><a href="#login">Prisijungti prie IS</a>.</li>
+<li><a href="pert_tasks_registry_1.html">Atsiversti Užduočių registrą/gedimų žurnalą.</a></li>
+<li><a href="pert_tasks_registry_1.html#add">Įterpti įrašą</a> apie gedimą/užduotį ir jį išsaugoti</a>.</li>
+<li><a href="pert_tasks_registry_1.html#edit_actions">Taisyti užduotį arba peržiūrėti vykdymą</a>.</li>
+</ol>
+</p>
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="example_task"></a>
+<h3>Užduoties vykdymo aprašymas</h3>
+<p>
+Tarkime, pagal aukščiau pateiktas instrukcijas PERTIS naudotojas užregistravo, kad perdegė lemputė. 
+Šį gedimą lentelėje „Užduotys“ mato padalinio, kuriam buvo nurodytas gedimas/užduotis, atsakingas asmuo.
+</p>
+<p>
+Padalinio atsakingo asmens veiksmai: 
+<ol>
+<li><a href="#login">Prisijungti prie IS</a>.</li>
+<li><a href="pert_tasks_1.html">Atsiversti „Užduotys“.</a></li>
+<li><a href="pert_tasks_1.html#edit">Taisyti užduoties įrašą, pažymėti, kad užduotis priimta, išsaugoti</a>.</li>
+<li><a href="pert_tasks_1.html#edit">Įvykdžius užduotį (pašalinus gedimą), taisyti tą patį įrašą, 
+įrašyti atlikimo pastabas, pažymėti „Pabaigta“ – „Taip“, išsaugoti</a>.
+<ol>
+<li>Jeigu reikia, galima taip pat įvesti <a href="pert_tasks_recources_1.html">resursus, sunaudotus užduoties vykdymui</a>.</li>
+<li>Taip pat, įvedus resursus, sunaudotus užduoties vykdymui, galima <a href="pert_tasks_1.html#fix_recources">suformuoti atsargų nurašymo 
+dokumentą</a> užduočiai.</li>
+<li>Jeigu reikia, galima taip pat paskirti <a href="pert_tasks_effectors_1.html">užduoties vykdytojus</a></li>
+</ol>
+</li>
+</ol>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+<a name="print_report"></a>
+<h4>Generuoti ataskaitas</h4>
+<p>
+<ul>
+<li class="warn">
+<img src="../../../lib/img/recordset/bullet_error.png">
+<em>Ataskaitos generuojamos visai lentelei. 
+Jeigu reikia ataskaitos tik vienam įrašui, <strong>pirma reikia pažymėti</strong> <input type="radio" checked="checked">  
+norimą atspausdinti įrašą.
+</em>
+</li>
+<li></li>
+<li class="warn">
+<img src="../../../lib/img/recordset/bullet_error.png">
+<em>Ataskaitoms galioja pritaikytas filtras ar rikiavimas.</em>
+</li>
+<li>Spausti <img src="../../../lib/img/recordset/printer.png"> lentelės antraštėje.</li>
+<li>Atsiverčia ataskaitos parinkimo forma.</li>
+<li><img src="img/interface/report_select_form.png" alt="Ataskaitos parinkimo forma" title="Ataskaitos parinkimo forma"></li>
+	<ul>
+		<li><strong>Ataskaita</strong> – pasirinkti ataskaitos pavadinimą.</li>
+		<li><strong>Viršus</strong> – tekstas, spausdinamas pačiame lapo viršuje.</li>
+		<li><strong>Pabaiga</strong> – tekstas, spausdinamas ataskaitos pabaigoje</li>
+		<li><strong>Kintamieji</strong>, kurie gali būti panaudoti viršuje, pabaigoje
+			<ul>
+				<li><strong>%date%</strong> – ataskaitos spausdinimo data.</li>
+				<li><strong>%time%</strong> – ataskaitos spausdinimo laikas.</li>
+				<li><strong>%user%</strong> – naudotojo, atspausdinusio ataskaitą vardas.</li>
+				<li><strong>%application%</strong> – IS pavadinimas.</li>
+				<li><strong>%records%</strong> – iš viso įrašų kiekis ataskaitoje.</li>
+				<li><strong>%filter%</strong> – pritaikyto filtro sąlyga. Jei filtro nėra – tuščia.</li>
+				<li><strong>%order%</strong> – pritaikyto rikiavimo sąlyga. Jei rikiavimas išjungtas – tuščia.</li>
+				<li><strong>%company%</strong> – įmonės pavadinimas. Nustatomas lentelėje „Parametrai“.</li>								
+			</ul>
+		</li>
+	</ul>
+<li class="warn">
+<img src="../../../lib/img/recordset/bullet_error.png">
+<em>Ataskaitų formos aprašomos ataskaitų konstruktoriuje.</em>
+</li> 
+<li>Paspaudus mygtuką <input type="button" value="Gerai"> ataskaita sugeneruojama ir parodoma ekrane. 
+Spausdinimo parametrai nustatomi ir spausdinimas vykdomas naršyklės priemonėmis.</li>
+<li>Paspaudus mygtuką <input type="button" value="Atgal"> ataskaitos parinkimo forma užverčiama, ataskaita negeneruojama.</li>
+<li class="warn">
+<img src="../../../lib/img/recordset/bullet_error.png">
+<em>Jeigu naudojama „Internet explorer“ naršyklė, paspaudus „Atgal“, 
+naršyklė, priklausomai nuo jos nustatymų, gali rodyti įspėjimą apie tai, kad IS užverčia 
+kortelę (langą).</em>
+</li>
+</ul>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a>
+</div>
+</div>
+</body>
+</html>

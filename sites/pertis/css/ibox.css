@@ -1,0 +1,38 @@
+#ibox_content { 
+	background: #eee; 
+	border-color: #999;
+}
+#ibox_wrapper { 
+	background: #999; 
+	border-color: #eee; 
+}
+#ibox_footer_wrapper { 
+	left: 0; 
+	right: 0; 
+	top: 0; 
+	padding: 3px 10px;
+}
+#ibox_footer_wrapper, #ibox_footer_wrapper a {
+	font-weight: normal; 
+	color: #eee; 
+	background: #999;
+}
+#ibox_footer_wrapper a {
+	color: #eee; 
+	border-color: #eee; 
+	text-decoration: none; 
+	padding: 0 3px;
+}
+#ibox_footer_wrapper a:hover {
+	color: #999; 
+	background: #eee;
+}
+#ibox_content {
+	margin: 25px 0 0 0; 
+	padding: 5px;
+}
+#ibox_loading {
+	color: #eee;
+    background: #eee url('../../../lib/img/wait/wait-0.gif') center center no-repeat;
+    border: solid 1px #999;
+}

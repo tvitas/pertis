@@ -1,0 +1,38 @@
+.tabs-li, .tabs-li-active {
+	display: block;
+	float: left;
+	padding: 1px;
+	margin: 1px;
+	display: inline;
+	border: solid 1px #888;				
+}
+
+.tabs-li-active {
+	background-color: #ffffcc;
+	color: #444;
+}
+
+.tabs-ul {
+	margin: 0;
+	padding: 0;	
+}
+
+.tabs-container {
+	margin: 0;
+	padding: 0;
+}
+.tab-div {
+	display: none;
+	overflow: auto; 
+}
+
+a.tabs-a, a.tabs-a:link, a.tabs-a:active {
+	padding: 3px;
+	display: block;	
+}
+
+a.tabs-a:hover {
+	background-color: #ffffcc;
+	color: #444;	
+}
+

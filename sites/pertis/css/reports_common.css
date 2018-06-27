@@ -1,0 +1,223 @@
+#topmost,
+#undermost,
+#sec-0,
+#sec-1,
+#sec-2,
+#sec-3,
+#sec-4,
+#sec-5,
+#sec-6,
+#sec-7,
+#sec-8,
+#sec-9,
+#sec-10,
+#sec-11,
+#sec-12 {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-weight: normal;
+	font-size: 11px;
+	margin-top: 5px;
+}
+
+#topmost h1,
+#undermost h1,
+#sec-0 h1,
+#sec-1 h1,
+#sec-2 h1,
+#sec-3 h1,
+#sec-4 h1,
+#sec-5 h1,
+#sec-6 h1,
+#sec-7 h1,
+#sec-8 h1,
+#sec-9 h1,
+#sec-10 h1,
+#sec-11 h1,
+#sec-12 h1,
+#topmost h2,
+#undermost h2,
+#sec-0 h2,
+#sec-1 h2,
+#sec-2 h2,
+#sec-3 h2,
+#sec-4 h2,
+#sec-5 h2,
+#sec-6 h2,
+#sec-7 h2,
+#sec-8 h2,
+#sec-9 h2,
+#sec-10 h2,
+#sec-11 h2,
+#sec-12 h2 {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: normal;
+	margin: 0;
+	text-align: center;
+}
+
+
+#topmost h1,
+#undermost h1,
+#sec-0 h1,
+#sec-1 h1,
+#sec-2 h1,
+#sec-3 h1,
+#sec-4 h1,
+#sec-5 h1,
+#sec-6 h1,
+#sec-7 h1,
+#sec-8 h1,
+#sec-9 h1,
+#sec-10 h1,
+#sec-11 h1,
+#sec-12 h1 {
+	font-size: 18px;
+}
+
+
+#topmost h2,
+#undermost h2,
+#sec-0 h2,
+#sec-1 h2,
+#sec-2 h2,
+#sec-3 h2,
+#sec-4 h2,
+#sec-5 h2,
+#sec-6 h2,
+#sec-7 h2,
+#sec-8 h2,
+#sec-9 h2,
+#sec-10 h2,
+#sec-11 h2,
+#sec-12 h2 {
+	font-size: 16px;
+}
+
+#sec-4 thead tr {
+	border: solid 1px;
+}
+
+#sec-4 thead th {
+	vertical-align: bottom;
+	border-right: solid 1px;
+	padding: 5px;
+}
+
+#sec-4 tbody tr {
+	border: solid 1px;
+}
+
+#sec-4 tbody td {
+	vertical-align: top;
+	border-right: solid 1px;
+	padding: 5px;
+}
+
+
+#sec-4 tbody td.budget_row_qty,
+#sec-4 tbody td.budget_row_price,
+#sec-4 tbody td.budget_row_total,
+#sec-4 tbody td.budget_row_tax_percent {
+    text-align: right;
+}
+
+#sec-4 tbody td.dim_title {
+    text-align: center;
+}
+
+#sec-7 h3 {
+	font-weight: normal;
+	display: box;
+	width: 25%;
+	text-align: right;
+	float: right;
+	margin: 0;
+}
+
+
+#sec-7 table {
+	width: 25%;
+	float: right;
+}
+
+
+#sec-7 thead th {
+	vertical-align: bottom;
+	padding: 5px;
+}
+
+#sec-7 tbody td {
+	vertical-align: top;
+	padding: 5px;
+}
+
+
+#sec-7 thead tr th.budget_amount,
+#sec-7 thead tr th.budget_total,
+#sec-7 thead tr th.budget_tax_amount,
+#sec-7 thead tr th.budget_total_used,
+#sec-7 thead tr th.budget_total_rest,
+#sec-7 thead tr th.budget_expenditures,
+#sec-7 thead tr th.budget_row_structure_node_path,
+#sec-7 thead tr th.structure_fullname,
+#sec-7 thead tr th.budget_row_total {
+    border: solid 1px;
+}
+
+#sec-7 thead th.budget_amount,
+#sec-7 thead th.budget_total,
+#sec-7 thead th.budget_tax_amount,
+#sec-7 thead th.budget_total_used,
+#sec-7 thead th.budget_total_rest,
+#sec-7 thead th.budget_expenditures,
+#sec-7 thead th.budget_row_structure_node_path,
+#sec-7 thead th.structure_fullname,
+#sec-7 thead th.budget_row_total {
+    border-right: solid 1px;
+}
+
+
+#sec-7 tbody tr th.budget_amount,
+#sec-7 tbody tr th.budget_total,
+#sec-7 tbody tr th.budget_tax_amount,
+#sec-7 tbody tr th.budget_total_used,
+#sec-7 tbody tr th.budget_total_rest,
+#sec-7 tbody tr th.budget_expenditures,
+#sec-7 tbody tr th.budget_row_structure_node_path,
+#sec-7 tbody tr th.structure_fullname,
+#sec-7 tbody tr th.budget_row_total {
+    border: solid 1px;
+}
+
+
+#sec-7 tbody tr td.budget_amount,
+#sec-7 tbody tr td.budget_total,
+#sec-7 tbody tr td.budget_tax_amount,
+#sec-7 tbody tr td.budget_total_used,
+#sec-7 tbody tr td.budget_total_rest,
+#sec-7 tbody tr td.budget_expenditures,
+#sec-7 tbody tr td.budget_row_structure_node_path,
+#sec-7 tbody tr td.structure_fullname,
+#sec-7 tbody tr td.budget_row_total {
+    border: solid 1px;
+}
+
+#sec-7 tbody td.budget_amount,
+#sec-7 tbody td.budget_total,
+#sec-7 tbody td.budget_tax_amount,
+#sec-7 tbody td.budget_total_used,
+#sec-7 tbody td.budget_total_rest,
+#sec-7 tbody td.budget_expenditures,
+#sec-7 tbody td.budget_row_structure_node_path,
+#sec-7 tbody td.budget_row_total {
+    border-right: solid 1px;
+    text-align: right;
+}
+
+.break-float {
+	clear:  both;
+}
+
+td.rownum {
+	text-align: right;
+}

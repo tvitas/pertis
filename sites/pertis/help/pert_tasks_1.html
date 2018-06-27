@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="lt">
+<head>
+<title>PERTIS pagalba</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../css/help.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="h-main-frame">
+<a name="top"></a>
+<div id="h-contents" class="h-contents">
+<!-- Užduotys -->
+<a href="#top" class="link-to-top">į pradžią</a> <a href="user_guide_1.html" class="link-to-top">Turinys</a>
+<a name="pert_tasks"></a>
+<h4>Užduotys</h4>
+<p>
+Atsakingas už užduočių vykdymą padalinio asmuo mato tik (jeigu kitaip nenurodyta sistemos nustatymuose) savo 
+padaliniui skirtas užduotis ir šiame registre užpildo duomenis, susijusiu su užduoties vykdymu.
+</p>
+Registras atverčiamas iš užduočių lentos (jei yra aprašyta) pasirinkus 
+„Veikla – Užuotys“, arba iš lentelių sąrašo, esančio sisteminiame meniu 
+pasirinkus „Užduotys“. 
+</p>
+<ul>
+<li><img src="img/tables/table_pert_tasks_select.png" alt="Sysmenu table select" title="Sisteminis meniu, užduotys"></li>
+<li><img src="img/tables/pert_tasks.png" alt="Užduotys" title="Užduotys"></li>
+</ul>
+</p>
+<p>Lentelės rodinyje matyti:
+<ul>
+<li><strong>Data, laikas</strong> – įvedimo data, laikas. 
+Tai data ir laikas, kada naudotojas, įvedęs užduotį/užregistravęs gedimą į užduočių registrą, pasirinko „Pateikta“ – „Taip“.</li>
+<li><strong>Pateikė</strong> – įrašą į užduočių registrą įvedusio naudotojo vardas, pavardė.</li>
+<li><strong>Nuo</strong> – padalinio, kuris registruoja gedimą, teikia užduotį, pavadinimas.</li>
+<li><strong>Kam</strong> – padalinio, kuriam skirta užduotis, pavadinimas.</li>
+<li><strong>Atsakingas</strong> – už užduoties vykdymą atsakingas asmuo.</li>
+<li><strong>Terminas</strong> – pageidaujamas užduoties įvykdymo/gedimo pašalinimo terminas.</li>
+<li><strong>Užduotis</strong> – užduoties aprašymas.</li>
+<li><strong>Būsena</strong> – užduoties būsena: 
+<ul>
+<li><em>Pateikta</em> – užduotis pateikta padaliniui, bet nepriimta vykdymui</li>
+<li><em>Priimta</em> – užduotis perskaityta, atsakingas už už užduoties vykdymą pažymėjo, kad užduotį gavo</li>
+<li><em>Atmesta</em> – užduotis nevykdoma, atmesta</li>
+</ul>
+</li>
+<li><strong>Atsakymas</strong> – užduoties atmetimo priežastis, užduoties vykdymo eiga, užduoties vykdytojo komentarai.</li>
+<li><strong>Užduotis baigta?</strong> – Taip/Ne. Jeigu užduotis įvykdyta, naudotojas, atsakingas už užduoties vykdymą, pažymi „Pabaigta“ „Taip“.</li>
+<li><strong>Pabaigta</strong> – užduoties pabaigimo data ir laikas</li>
+<li><strong>Pakeista</strong> – įrašo pakeitimo data, laikas.</li>
+<li><strong>Pakeitė</strong> – įrašą pakeitusio naudotojo vardas.</li>
+<li><strong>Paskutinis nurašymas</strong> – data, kada buvo suformuotas paskutinis resursų nurašymo 
+dokumentas šiai užduočiai. Jeigu resursų nėra, paskutinio nurašymo data = užduoties registravimo 
+(įvedimo) data.</li>
+</ul>
+</p>
+
+<p>
+Galima atlikti šiuos veiksmus:
+<ul>
+<li><img src="../../../lib/img/recordset/table_row_insert.png" alt="Ins" title="Įterpti įrašą"> <a href="#add">Įterpti užduoties įrašą. </a></li>
+<li><img src="../../../lib/img/recordset/table_row_delete.png" alt="Del" title="Naikinti įrašą"> <a href="#delete">Naikinti užduoties įrašą.</a></li>
+<li><img src="../../../lib/img/recordset/table_edit.png" alt="Edit" title="Redaguoti įrašą"> <a href="#edit">Redaguoti užduoties įrašą.</a></li>
+<li><img src="../../../lib/img/recordset/application_view_detail.png" alt="View" title="Peržiūrėti įrašą"> <a href="#view">Peržiūrėti užduoties įrašą.</a></li>
+<li><img src="../../../lib/img/recordset/page_find.png" alt="Filter" title="Filter"> <a href="user_guide_1.html#filter_records">Filtruoti užduočių įrašus</li>
+<li><a href="user_guide_1.html#sort_records">Rikiuoti užduočių/žurnalo įrašus</a></li>
+<li><img src="../../../lib/img/recordset/printer.png" alt="Print" title="Spausdinti"> <a href="user_guide_1.html#print_report">Spausdinti ataskaitas</a>, kurios susijusios su šiuo registru ir aprašytos ataskaitų konstruktoriuje</li>
+<li><img src="../../../lib/img/recordset/pencil_add.png" alt="Fix recources" title="Formuoti dokumentą"> Pagal įvestus resursus, sunaudotus užduoties vykdymui, <a href="#fix_recources">suformuoti resursų nurašymo</a> dokumentą.</li>
+</ul>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a> <a href="user_guide_1.html" class="link-to-top">Turinys</a>
+<a name="related_tables"></a>
+<p>
+Taip pat šiame registre (atvertus įrašo formą peržiūrai arba redagavimui) 
+rodoma ir redaguojama susijusi informacija apie užduotį/gedimą:
+<ul>
+<li><img src="img/tables/tabs_pert_tasks.png" alt="Susiję duomenys" title="Susiję duomenys"></li>
+<li><strong>Užduočių registras</strong> – užduočių registro/gedimų žurnalo įrašas užduočiai.</li>
+<li><strong>Užduočių resursai</strong> – resursai (medžiagos), sunaudotos vykdant užduotį.</li>
+<li><strong>Užduočių vykdytojai</strong> – darbuotojai, paskirti vykdyti užduotį.</li>
+<li><strong>Failai</strong> – su užduoties vykdymu susiję failai.</li>
+</ul>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a> <a href="user_guide_1.html" class="link-to-top">Turinys</a>
+<a name="add"></a>
+<h4>Įterpti naują užduoties įrašą</h4>
+<p class="warn">
+<img src="../../../lib/img/recordset/bullet_error.png" alt="Dėmesio" title="Dėmesio"> 
+Tiesiogiai įterpti naujo užduoties įrašo negalima. Užduotys registruojamos ir gedimų 
+žurnalas pildomas <a href="pert_tasks_registry_1.html">užduočių registre/gedimų žurnale</a> 
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a> <a href="user_guide_1.html" class="link-to-top">Turinys</a>
+<a name="edit"></a>
+<h4>Redaguoti užduočių registro įrašą</h4>
+<p>
+<ul>
+<li>Pažymėti <input type="radio" checked="checked"> norimą redaguoti įrašą.</li>
+<li>Spausti <img src="../../../lib/img/recordset/table_edit.png"> lentelės antraštėje.</li>
+<li>Atsiverčia įrašo redagavimo forma.</li>
+<li><img src="img/tables/table_pert_tasks_edit.png" alt="Redagavimo forma" title="Redagavimo forma"></li>
+<li class="warn"><img src="../../../lib/img/recordset/bullet_error.png">
+Jeigu įterpiant ar redaguojant užduoties/gedimo įrašą laukelis <strong>Pabaigta</strong> buvo pasirinktas 
+„Taip“, įrašas neredaguojamas, bet galima redaguoti susijusiu duomenis: užduočių vykdytojai, 
+užduočių resursai, failai ir peržiūrėti užduoties registro įrašą. </li>
+<a name="actions"></a>
+<li>Formoje užpildomi laukeliai:
+<ul>
+<li><strong>Reg. Nr.</strong> – užduočių registro Nr. Užpildomas automatiškai įterpiant užduočių registro/
+gedimų žurnalo įrašą;</li>
+<li><strong>Užduoties Nr.</strong> – Užpildomas automatiškai;</li>
+<li><strong>Data, laikas</strong> – Užduoties registravimo data, laikas. Užpildomas automatiškai įterpiant užduočių 
+registro/gedimų žurnalo įrašą;</li>
+<li><strong>Pateikė</strong> – naudotojo, užregistravusio užduotį, vardas, pavardė. Užpildo naudotojas, 
+įterpdamas užduočių registro/gedimų žurnalo įrašą;</li>
+<li><strong>Nuo</strong> – padalinio, pateikusio užduotį, pavadinimas. Užpildo naudotojas, 
+įterpdamas užduočių registro/gedimų žurnalo įrašą;</li>
+<li><strong>Kam</strong> – kuriam padaliniui skirta užduotis. Užpildo naudotojas, 
+įterpdamas užduočių registro/gedimų žurnalo įrašą. Jeigu pvz. naudotojas pateikė užduotį ne tam 
+padaliniui, padalinį galima pakeisti. Pasirinkti iš sąrašo;</li>
+<li><strong>Atsakingas</strong> – už užduoties vykdymą atsakingo asmens vardas, pavardė. Atsakingo asmens 
+vardas ir pavardė užpildoma automatiškai, registruojant užduotį/gedimą. 
+Jeigu pvz. naudotojas pateikė užduotį ne tam padaliniui arba už užduoties vykdymą atsako kitas asmuo, 
+atsakingo asmens pavardę galima pakeisti. Pasirinkti iš sąrašo;</li>
+<li><strong>Terminas</strong> – per kiek laiko naudotojas, užregistravęs užduotį/gedimą, 
+pageidauja, kad užduotis būtų įvykdyta;</li>
+<li><strong>Užduotis</strong> – užduoties aprašymas. Pvz. „pakeisti el. lemputę 111 kb.“. 
+Užpildo naudotojas, įterpdamas užduočių registro/gedimų žurnalo įrašą;</li>
+<li><strong>Būsena</strong> – užduoties būsena:
+<ul>
+<li><em>Pateikta</em> – užduotis pateikta padaliniui, bet nepriimta vykdymui</li>
+<li><em>Priimta</em> – užduotis perskaityta. Atsakingas už už užduoties vykdymą asmuo, perskaitęs užduotį pažymi „Priimta“.</li>
+<li><em>Atmesta</em> – užduotis nevykdoma, atmesta</li>
+</ul>
+</li>
+<li><strong>Atsakymas</strong> – užduoties vykdymo aprašymas, jeigu užduotis atmesta – atmetimo priežastis;</li>
+<li><strong>Pastaba</strong> – bet koks tekstas. Gali likti tuščia;</li>
+<li><strong>Užduotis baigta</strong> – „Taip“, jeigu užduotis baigta, „Ne“, jeigu dar vyksta. Užpildo atsakingas už užduoties vykdymą asmuo;</li>
+<li><strong>Pabaigta</strong> – užduoties pabaigimo data, laikas – kada asmuo, atsakingas už užduoties vykdymą pažymėjo „Užduotis baigta“ – „Taip“, 
+arba galima įvesti užduoties pabaigimo datą. Datos ir laiko formatas „YYYY MM DD HH:MM:SS“, arba „YYYY-MM-DD HH:MM:SS“, arba „YYYYMMDD HH:MM:SS“. 
+Jeigu praleidžiamos valanda, minutės, sekundės, laikas bus „00:00:00“;</li>
+<li><strong>Pakeista</strong> – įrašo pakeitimo data, laikas. Užpildomas automatiškai;</li>
+<li><strong>Pakeitė</strong> – įrašą pakeitusio naudotojo vardas. Užpildomas automatiškai;</li>
+<li><strong>Paskutinis nurašymas</strong> – data, kada buvo suformuotas paskutinis resursų nurašymo 
+dokumentas šiai užduočiai. Jeigu resursų nėra, paskutinio nurašymo data = užduoties registravimo 
+(įvedimo) data.</li>
+</ul>
+</li>
+<li>Paspaudus <input type="button" value="Saugoti" class="form-button"> duomenys išsaugomi, forma užverčiama.</li>
+<li>Paspaudus <input type="button" value="Atgal" class="form-button"> duomenys neišsaugomi, forma užverčiama.</li>
+</ul>
+</p>
+<p>
+<a name="related"></a>
+<ul>
+<li>Galima peržiūrėti 
+<a href="pert_tasks_registry_1.html" alt="Užduočių registras" title="Užduočių registras">užduočių registro/gedimų žurnalo</a> įrašus:
+<ul>
+<li><img src="img/tables/tab_tasks_registry.png" alt="Užduočių registras" title="Užduočių registras"></li>
+<li><img src="img/tables/table_pert_tasks_registry_related.png" alt="Užduočių registras" title="Užduočių registras"></li>
+</ul>
+</li>
+
+<li>Galima peržiūrėti ir redaguoti užduoties vykdymui 
+<a href="pert_tasks_recources_1.html" alt="Užduočių resursai" title="Užduočių resursai">sunaudotus resursus</a>:
+<ul>
+<li><img src="img/tables/tab_tasks_recources.png" alt="Užduočių resursai" title="Užduočių resursai"></li>
+<li><img src="img/tables/table_pert_tasks_recources_related.png" alt="Užduočių resursai" title="Užduočių resursai"></li>
+</ul>
+</li>
+
+<li>Galima peržiūrėti ir redaguoti užduoties vykdymui paskirtus 
+<a href="pert_tasks_effectors_1.html" alt="Užduočių vykdytojai" title="Užduočių vykdytojai">vykdytojus (darbuotojus)</a>:
+<ul>
+<li><img src="img/tables/tab_tasks_effectors.png" alt="Užduočių vykdytojai" title="Užduočių vykdytojai"></li>
+<li><img src="img/tables/table_pert_tasks_effectors_related.png" alt="Užduočių vykdytojai" title="Užduočių vykdytojai"></li>
+</ul>
+</li>
+
+<li>Galima peržiūrėti prie užduoties prisegtus 
+<a href="pert_system_schema_files_1.html" alt="Failai" title="Failai">failus</a>:
+<ul>
+<li><img src="img/tables/tab_files.png" alt="Failai" title="Failai"></li>
+<li><img src="img/tables/table_system_schema_files_related.png" alt="Failai" title="Failai"></li>
+</ul>
+</li>
+</ul>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a> <a href="user_guide_1.html" class="link-to-top">Turinys</a>
+<a name="delete"></a>
+<h4>Naikinti užduoties įrašą</h4>
+<p>
+<ul>
+<li>Pažymėti <input type="radio" checked="checked"> norimą panaikinti įrašą.</li>
+<li>Spausti <img src="../../../lib/img/recordset/table_row_delete.png"> lentelės antraštėje.</li>
+<li>Atsiverčia įrašo naikinimo forma.</li>
+<li><img src="img/tables/table_pert_tasks_delete.png" alt="Naikinti" title="Įrašo sunaikinimo forma"></li>
+<li class="warn"><img src="../../../lib/img/recordset/bullet_error.png">
+Jeigu užduoties įrašo laukelis <strong>Pabaigta</strong> buvo pasirinktas „Taip“, įrašo panaikinti negalima</li>
+<li>Paspaudus <input type="button" value="Naikinti"> įrašas panaikinamas, forma užverčiama.</li>
+<li>Paspaudus <input type="button" value="Atgal"> įrašas nepanaikinamas, forma užverčiama.</li>
+</ul>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a> <a href="user_guide_1.html" class="link-to-top">Turinys</a>
+<a name="view"></a>
+<h4>Peržiūrėti užduoties įrašą</h4>
+<p>
+<ul>
+<li>Pažymėti <input type="radio" checked="checked"> norimą peržiūrėti įrašą.</li>
+<li>Spausti <img src="../../../lib/img/recordset/application_view_detail.png"> lentelės antraštėje.</li>
+<li>Atsiverčia įrašo peržiūros forma. Forma tokia pati, kaip ir redagavimo</li>
+<li>Galima peržiūrėti <a href="#related">susijusias lenteles</a></li>
+<li>Paspaudus <input type="button" value="Atgal">, forma užverčiama.</li>
+</ul>
+</p>
+
+<a href="#top" class="link-to-top">į pradžią</a> <a href="user_guide_1.html" class="link-to-top">Turinys</a>
+<a name="fix_recources"></a>
+<h4>Suformuoti nurašymo dokumentą</h4>
+<p>
+<ul>
+<li>Pažymėti <input type="radio" checked="checked"> įrašą, kuriam reikia suformuoti resursų nurašymo dokumentą.</li>
+<li>Spausti <img src="../../../lib/img/recordset/pencil_add.png"> lentelės antraštėje.</li>
+<li>Jeigu yra įvesti resursai į <a href="pert_tasks_recources_1.html">užduočių resursų</a> registrą, suformuojamas 
+nepatvirtintas nurašymo dokumentas, žr. „Prekės“ – „Vidaus apyvartos dokumentai“.</li>
+</ul>
+</p>
+
+
+<!-- /Užduotys -->
+<a href="#top" class="link-to-top">į pradžią</a> <a href="user_guide_1.html" class="link-to-top">Turinys</a>
+</div>
+</div>
+</body>
+</html>

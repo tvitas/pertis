@@ -1,0 +1,65 @@
+Return-Path: <Justinas.Kasiulis@lsmuni.lt>
+Delivered-To: vitas@lva.lt
+Received: from localhost (localhost [127.0.0.1])
+	by mail.lva.lt (Postfix) with ESMTP id DE74A22C7F
+	for <vitas@lva.lt>; Tue, 22 Apr 2014 09:55:43 +0300 (EEST)
+X-Virus-Scanned: Debian amavisd-new at lva.lt
+Received: from mail.lva.lt ([127.0.0.1])
+	by localhost (mail.lva.lt [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id 03B2OVcebDZr for <vitas@lva.lt>;
+	Tue, 22 Apr 2014 09:55:41 +0300 (EEST)
+Received: from mail.lsmuni.lt (mail.lsmuni.lt [193.219.163.50])
+	(using TLSv1 with cipher AES128-SHA (128/128 bits))
+	(No client certificate requested)
+	by mail.lva.lt (Postfix) with ESMTPS id 8100222C5F
+	for <vitas@lva.lt>; Tue, 22 Apr 2014 09:55:41 +0300 (EEST)
+Received: from EXSRV01.kmu.lt (193.219.163.112) by EXSRV.kmu.lt
+ (193.219.163.50) with Microsoft SMTP Server (TLS) id 14.3.158.1; Tue, 22 Apr
+ 2014 09:55:41 +0300
+Received: from EXSRV.kmu.lt ([193.219.163.50]) by exsrv01.kmu.lt
+ ([193.219.163.112]) with mapi id 14.03.0123.003; Tue, 22 Apr 2014 09:55:41
+ +0300
+From: Justinas Kasiulis <Justinas.Kasiulis@lsmuni.lt>
+To: "vitas@lva.lt" <vitas@lva.lt>
+Subject: RE: FC
+Thread-Topic: FC
+Thread-Index: AQHPWjt2venaDhCfn0uhYcANoWuzUpsVwvsggAd4B+A=
+Date: Tue, 22 Apr 2014 06:55:40 +0000
+Message-ID: <0091231C3C039C4A8E7464BC9EAB886001114AD7F4@exsrv.kmu.lt>
+References: <534FCDD5.4040207@lva.lt>
+ <AC4D6A2DE57A2B44BE5DAAC0D95000F50110A6578B@exsrv.kmu.lt>
+In-Reply-To: <AC4D6A2DE57A2B44BE5DAAC0D95000F50110A6578B@exsrv.kmu.lt>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+x-originating-ip: [193.219.163.16]
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: base64
+MIME-Version: 1.0
+
+Vmlza2FzIHN1dHZhcmt5dGEsIHByaXNpanVuZ3QgZ2FsaSBkYWJhciwgcHJpxJdpbcSFIHByaWUg
+c3V0YXLEjWnFsyB0dXJpLg0KDQpQYWdhcmJpYWksDQoNCkZpcnN0IENsYXNzIGFuZG1pbmlzdHJh
+dG9yaXVzDQpKdXN0aW5hcyBLYXNpdWxpcw0KDQpMU01VDQpJbmZvcm1hY2luacWzIHRlY2hub2xv
+Z2lqxbMgY2VudHJhcw0KU3VraWzEl2xpxbMgcHIuIDE3LCBLYXVuYXMNClRlbC4gKDgtMzcpIDM5
+NTgwMywgdHJ1bXBhcyBuci4gMTAwNywNCkVsLiBwYcWhdGFzIGp1c3RpbmFzLmthc2l1bGlzQGxz
+bXVuaS5sdCANCg0KLS0tLS1PcmlnaW5hbCBNZXNzYWdlLS0tLS0NCkZyb206IFZ5dGF1dGFzIEth
+c2l1bGlzIA0KU2VudDogVGh1cnNkYXksIEFwcmlsIDE3LCAyMDE0IDM6NTEgUE0NClRvOiBKdXN0
+aW5hcyBLYXNpdWxpcw0KU3ViamVjdDogRlc6IEZDDQoNCg0KDQpQYWdhcmJpYWksDQoNCkluZm9y
+bWFjaW5pxbMgc2lzdGVtxbMgaXIgcHJvZ3JhbWluxJdzDQrEr3JhbmdvcyBza3lyaWF1cyB2ZWTE
+l2phcw0KVnl0YXV0YXMgS2FzaXVsaXMNCg0KTFNNVQ0KSW5mb3JtYWNpbmnFsyB0ZWNobm9sb2dp
+asWzIGNlbnRyYXMNClN1a2lsxJdsacWzIHByLiAxNywgS2F1bmFzDQpUZWwuICg4LTM3KSAzOTU4
+MDMsIHRydW1wYXMgbnIuIDU1OTgsDQpNb2IudGVsLiA4LTYwNy02NjY3NA0KRWwuIHBhxaF0YXMg
+dnl0YXV0YXNAbHNtdW5pLmx0IA0KDQotLS0tLU9yaWdpbmFsIE1lc3NhZ2UtLS0tLQ0KRnJvbTog
+Vml0YWxpanVzIFRyYWlueXMgW21haWx0bzp2aXRhc0BsdmEubHRdIA0KU2VudDogVGh1cnNkYXks
+IEFwcmlsIDE3LCAyMDE0IDM6NDkgUE0NClRvOiBWeXRhdXRhcyBLYXNpdWxpcw0KU3ViamVjdDog
+RkMNCg0KU3ZlaWtpLA0KDQpLbyByZWlrdMWzLCBrYWQgacWhdmFyZGludGkgUEVSVCBkYXJidW90
+b2phaSBnYXV0xbMgcHJpZWlnxIUgcHJpZSBGQyBkb2t1bWVudMWzIHZhbGR5bW8gdGFybnliYSAt
+PiBMU01VIHBpcmtpbW8gLSBwYXJkYXZpbW8gc3V0YXJ0eXM/DQoNClZpZG1hbnRhcyBOYWdsaXMN
+Ckd2aWRvbHRhcyBEYW5pxaFhdXNrYXMNClJvbWFzIFByb3NjZXZpxI1pdXMNCkdpbnRhdXRhcyBN
+aWthbGF1c2thcw0KVmlkbWFudGFzIEtyZWfFvmR5cw0KTWluZGF1Z2FzIEdhaWdhbGFzDQoNCmxz
+bXUgZS1tYWlsIGppZSB0dXJpLCBiZXQgcHZ6LiBiYW5kxb5pYXUganVuZ3RpcyBGQyB0aWVrIFZp
+ZG1hbnRhcyBOYWdsaXMsIHRpZWsgTWluZGF1Z2FzIEdhaWdhbGFzIG1ldGEgbGF1ayA6KC4NCktp
+dMWzIG5lYmFuZMW+aWF1LCBiZXQsIHR1cmLFq3QgYnVzIHBhbmHFoWlhaS4uLg0KLS0NCnBhZ2Fy
+YmlhaSwNCg0KVml0YWxpanVzIFRyYWlueXMNCkxTTVUgVkENClRlbC4gKzM3MCAzNyAzNjI4MzAN
+Cm1vYi4gKzM3MCA2NzUgMzEyNTMNCg==

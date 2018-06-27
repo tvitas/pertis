@@ -1,0 +1,70 @@
+.div-menu-bar {
+	font-family: Trebuchet MS, Times New Roman, serif;
+	font-size: 12px;
+	padding: 3px;
+}
+
+div.menu-container {
+	cursor: default;
+	width: 100%;
+/*	background-color: #f5fff0; #e6f0f7;*/
+	background-color: #eee;
+	border: solid 1px;
+/*	border-color: #00844a; #005bab;*/ 
+	border-color: #888;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.table-menu {
+height: 20px;
+border: solid 1px;
+border-color: #a8a8a8;
+background-color: #d0d0d0;
+margin-left: 1%;
+margin-right: 1%;
+} 
+
+.td-menu {
+width: 20px;
+border-right: solid 1px;
+border-color: #a8a8a8;
+font-family: Verdana;
+font-size: 11px;
+color: green;
+text-align: center;
+}
+
+p.menu {
+	margin:0; 
+	color: #00844a; 
+	font-size: 9px;
+	text-align: center;
+}
+
+img.menu {
+	border: none;
+	vertical-align: middle;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+img.icon-box {
+	border: none;
+	padding-top: 3px;
+}
+
+.table-table-menu {
+height: 15px;
+margin-left: auto;
+margin-right: 3px;
+position: relative;
+float: left;
+}
+
+.td-table-menu {
+width: 20px;
+font-family: Verdana;
+text-align: center;
+}

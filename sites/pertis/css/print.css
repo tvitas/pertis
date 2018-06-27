@@ -1,0 +1,58 @@
+body {
+	font-family: Tahoma,Verdana,sans-serif;
+	color: #222;
+	font-size: 11px;
+}
+
+@media print, screen {
+	thead {
+		display: table-header-group;
+	}
+
+	tbody {
+		display:table-row-group;
+	}
+
+	tr {
+		page-break-inside: avoid;
+	}
+}
+
+.option-bold {
+	font-weight: bold;
+}
+
+div.select-report-form {
+	width: 50%;
+	margin-right: auto;
+	border: solid 1px #00844a;
+	background-color: #f5fff0;
+	padding: 10px;
+	margin-top: 5px;
+	color: #00844a;
+}
+
+table.select-report-form {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td.select-report-form {
+	vertical-align: top;
+}
+
+textarea.select-report-form {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	width: 100%;
+	min-height: 100%;
+}
+
+.table-print  {
+	border-collapse: collapse;
+	border-spacing: 3px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}

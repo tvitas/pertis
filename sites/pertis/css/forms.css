@@ -1,0 +1,170 @@
+.form-wrapper {
+	cursor: default;
+}
+
+.related-table-title {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: #444;
+}
+.option-bold {
+	font-weight: bold;
+}
+.option-italic {
+	font-style: italic;
+}
+
+.div-input {
+	position: relative;
+	width: 230px;
+	min-height: 15px;
+	float: left;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 3px;
+	margin: 1px;
+	color: #444;
+	border: solid 1px #888;
+	background-color: #eee;
+}
+
+.div-input-text {
+	position: relative;
+	width: 425px;
+	min-height: 15px;
+	float: left;
+	padding-top: 1px;
+	padding-left: 1px;
+	padding-right: 1px;
+	padding-bottom: 3px;
+	margin: 1px;
+	color: #444;
+	border: solid 1px #888;
+	background-color: #eee;
+}
+
+.div-sql {
+	font-size: 14px;
+	width: 99%;
+	min-height: 90px;
+	color: #444;
+	border: solid 1px #bbb;
+	background-color: #eee;
+}
+
+.div-select {
+	position: relative;
+	width: 210px;
+	float: left;
+}
+
+.break-float {
+	clear: both;
+}
+
+.form-select {
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	width: 205px;
+}
+
+.filter-select {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	width: 160px;
+}
+
+.form-pages {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	width: 50px;
+}
+
+.form-input {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	width: 230px;
+}
+
+.filter-input {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	width: 190px;
+}
+
+.form-input-table-head {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	width: 90%;
+	border: solid 1px #eee;
+}
+
+.form-toolbar {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	width: 30px;
+}
+
+
+.form-textarea {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	width: 80%;
+	min-height: 75px;
+}
+
+.form-button {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+}
+
+.form-input-yesno {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	width: 36px;
+}
+
+.form-input-phone {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	width: 76px;
+}
+
+.form-select-yesno {
+	font-family: Verdana, sans-serif;
+	font-size: 11px;
+	width: 48px;
+}
+
+.td-comments, .td-align-right {
+	text-align: right;
+	vertical-align: top;
+	font-weight: bold;
+	width: 10%;
+}
+
+.td-values, .td-align-top {
+	vertical-align: top;
+	text-align: left;
+	width: 90%;
+}
+
+.td-values-auto, .td-align-top-auto {
+	vertical-align: top;
+	text-align: left;
+}
+
+.td-align-center {
+	text-align: center;
+	vertical-align: top;
+}
+
+.form-input-file {
+	font-size: 12px;
+	color: #005aab;
+	}
