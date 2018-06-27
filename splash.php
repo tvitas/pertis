@@ -11,7 +11,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html lang="lt">
 <head>
-<title>Užduotys LSMU</title>
+<title>PERTIS</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8" >
 <link href="lib/css/layout.css" rel="stylesheet" type="text/css">
 <link href="lib/css/engine.css" rel="stylesheet" type="text/css">
