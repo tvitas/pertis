@@ -2,4 +2,5 @@ fill_the_depts.php
 /data/files/*
 /log/*
 /src/*
+/lib/etc/connections.conf
 index.php
